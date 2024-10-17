@@ -1,13 +1,12 @@
 package com.sergosoft.railwaymanager.railwaycar;
 
 public abstract class RailwayCar {
-    protected int length;
-    protected int width;
-    protected int maxSpeed;
-    protected int serviceLife;
-    protected float maxTareWeight;
-
-    public RailwayCar() {}
+    protected RailwayCarConductor conductor;
+    private int length;
+    private int width;
+    private int maxSpeed;
+    private int serviceLife;
+    private float maxTareWeight;
 
     public RailwayCar(int length, int width, int maxSpeed, int serviceLife, float maxTareWeight) {
         this.length = length;
