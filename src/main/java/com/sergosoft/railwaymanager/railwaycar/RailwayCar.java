@@ -1,7 +1,6 @@
 package com.sergosoft.railwaymanager.railwaycar;
 
 public abstract class RailwayCar {
-    protected RailwayCarConductor conductor;
     private int length;
     private int width;
     private int maxSpeed;

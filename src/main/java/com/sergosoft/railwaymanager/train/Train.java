@@ -19,7 +19,7 @@ public abstract class Train <C extends RailwayCar> {
         this.route = route;
     }
 
-    public List<RailwayCar> getRailwayCarsList() {
+    public List<C> getRailwayCarsList() {
         return List.copyOf(railwayCarsList);
     }
 

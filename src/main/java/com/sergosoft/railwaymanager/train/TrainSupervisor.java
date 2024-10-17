@@ -1,6 +1,6 @@
 package com.sergosoft.railwaymanager.train;
 
-public abstract class TrainSupervisor <T extends Train> {
+public abstract class TrainSupervisor<T extends Train> {
     protected T train;
 
     public TrainSupervisor(T train) {
