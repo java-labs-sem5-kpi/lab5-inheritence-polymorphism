@@ -41,4 +41,8 @@ public abstract class TrainSupervisor<T extends Train<C>, C extends RailwayCar> 
         }
         return railwayCars;
     }
+
+    public List<RailwayCar> getRailwayCarsList() {
+        return List.copyOf(train.railwayCarsList);
+    }
 }

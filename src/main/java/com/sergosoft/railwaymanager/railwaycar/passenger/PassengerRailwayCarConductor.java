@@ -7,7 +7,7 @@ public class PassengerRailwayCarConductor extends RailwayCarConductor<PassengerR
         super(railwayCar);
     }
 
-    public int getPassengersAmount() {
+    public int countPassengers() {
         int passengersAmount = 0;
         for(Seat seat : railwayCar.getSeats()) {
             if(seat.isBusy()) {
@@ -17,7 +17,7 @@ public class PassengerRailwayCarConductor extends RailwayCarConductor<PassengerR
         return passengersAmount;
     }
 
-    public int getLuggageAmount() {
+    public int countLuggage() {
         int luggageAmount = 0;
         for(Seat seat : railwayCar.getSeats()) {
             if(seat.containsLuggage()) {

@@ -54,4 +54,15 @@ public abstract class RailwayCar {
     public void setMaxTareWeight(float maxTareWeight) {
         this.maxTareWeight = maxTareWeight;
     }
+
+    @Override
+    public String toString() {
+        return "RailwayCar{" +
+                "length=" + length +
+                ", width=" + width +
+                ", maxSpeed=" + maxSpeed +
+                ", serviceLife=" + serviceLife +
+                ", maxTareWeight=" + maxTareWeight +
+                '}';
+    }
 }

@@ -47,4 +47,12 @@ public class PassengerRailwayCar extends RailwayCar {
     public void setComfortType(ComfortType comfortType) {
         this.comfortType = comfortType;
     }
+
+    @Override
+    public String toString() {
+        return "PassengerRailwayCar{" +
+                super.toString() +
+                ", comfortType=" + comfortType +
+                '}';
+    }
 }

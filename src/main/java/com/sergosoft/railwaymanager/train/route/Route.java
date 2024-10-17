@@ -23,4 +23,12 @@ public class Route extends ArrayList<RouteRecord> {
         }
         this.routeRecordList = routeRecordList;
     }
+
+    public RouteRecord getStart() {
+        return routeRecordList.get(0);
+    }
+
+    public RouteRecord getEnd() {
+        return routeRecordList.get(routeRecordList.size() - 1);
+    }
 }
